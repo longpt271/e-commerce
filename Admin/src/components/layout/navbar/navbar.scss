@@ -1,0 +1,32 @@
+.main-navbar {
+  height: 50px;
+  border-bottom: 0.5px solid rgb(231, 228, 228);
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  background-color: white;
+  color: #555;
+
+  a {
+    text-decoration: none;
+  }
+
+  .wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .avatar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 20px;
+
+      width: 30px;
+      height: 30px;
+
+      cursor: pointer;
+    }
+  }
+}

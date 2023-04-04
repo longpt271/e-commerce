@@ -1,0 +1,51 @@
+.chat-body {
+  flex: 4;
+  overflow: auto;
+
+  /* CSS scroll bar */
+  &::-webkit-scrollbar {
+    width: 6px;
+
+    &-thumb {
+      background-color: #ccc;
+    }
+  }
+
+  .avatarImg {
+    width: 35px;
+    height: 100%;
+
+    background-color: #f5f6f7;
+    border-radius: 25px;
+  }
+
+  .customerMess {
+    display: flex;
+    align-items: flex-start;
+    max-width: 70%;
+  }
+
+  .customerMess p {
+    background-color: #e4fbf8;
+    word-wrap: break-word;
+    overflow: auto;
+    max-width: 100%;
+  }
+
+  .adminMess {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 70%;
+
+    background-color: #f5f6f7;
+  }
+
+  /* .divider:after,
+  .divider:before {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #eee;
+  } */
+}

@@ -1,0 +1,82 @@
+.widget {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  // border-radius: 10px;
+  height: 100px;
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .title {
+      font-size: 14px;
+      color: rgb(160, 160, 160);
+      cursor: pointer;
+    }
+
+    .counter {
+      font-size: 25px;
+
+      small {
+        font-size: 13px;
+        position: relative;
+        top: -8px;
+      }
+    }
+
+    .counter.money-info {
+      position: relative;
+      /* Định dạng phần tử cha */
+
+      &:hover::before {
+        content: 'Tổng số tiền đã được thanh toán.';
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 8px;
+        background-color: #333;
+        color: #fff;
+        font-size: 14px;
+        white-space: nowrap;
+        /* Định dạng info text khi hover */
+        visibility: visible;
+        opacity: 1;
+        /* Hiển thị info text khi hover */
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 8px;
+        background-color: #333;
+        color: #fff;
+        font-size: 14px;
+        white-space: nowrap;
+        visibility: hidden;
+        opacity: 0;
+        /* Ẩn info text mặc định */
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .icon {
+      color: gray;
+      font-size: 25px;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.ChatForm {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  height: 63px;
+
+  /* background-color: #f9fafb; */
+  border-top: 1px solid #e2e2e2;
+}
+
+.ChatForm button {
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 25px;
+  background-color: #00caf1;
+
+  margin: 10px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ChatForm svg {
+  font-size: 20px;
+  color: white;
+}
+
+.form-control {
+  border-color: transparent;
+  padding: 10px 20px;
+}
+
+.form-control:focus {
+  border-color: transparent;
+  box-shadow: inset 0px 0px 0px 1px transparent;
+}
+
+.form-control:focus,
+.btn:focus {
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .ChatForm {
+    padding-right: 15px !important;
+  }
+}
