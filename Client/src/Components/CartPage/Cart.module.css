@@ -1,0 +1,44 @@
+.rowHeader {
+  background-color: rgb(248, 249, 250);
+}
+
+.titleCart {
+  letter-spacing: 0.1em;
+}
+
+.shoppingBtn {
+  border: none;
+  background-color: transparent;
+  font-style: italic;
+  color: rgb(112, 112, 112);
+
+  display: flex;
+  align-items: center;
+}
+
+.checkoutBtn {
+  border: 1px solid var(--black);
+  padding: 10px;
+  font-style: italic;
+  color: rgb(112, 112, 112);
+
+  display: flex;
+  align-items: center;
+  transition: all 300ms;
+}
+
+.checkoutBtn:hover {
+  background-color: var(--bg-main-color);
+  color: white;
+}
+
+.shoppingBtn svg,
+.checkoutBtn svg {
+  font-size: 0.75rem;
+}
+
+@media (max-width: 767.98px) {
+  .rowHeader {
+    display: none;
+  }
+}

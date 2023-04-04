@@ -1,0 +1,23 @@
+.DetailOrderBtn {
+  text-decoration: none;
+  border: 1px solid var(--black);
+  padding: 10px;
+  font-style: italic;
+  color: rgb(112, 112, 112);
+  transition: all 300ms;
+}
+
+.DetailOrderBtn svg {
+  font-size: 0.75rem;
+}
+
+.DetailOrderBtn:hover {
+  background-color: var(--bg-main-color);
+  color: white;
+}
+
+@media screen and (max-width: 991.98px) {
+  .DetailOrderBtn {
+    padding: 8px 15px;
+  }
+}

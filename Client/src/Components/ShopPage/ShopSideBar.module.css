@@ -1,0 +1,22 @@
+.shopSideBar h4,
+.shopSideBar strong {
+  letter-spacing: 0.1em;
+}
+
+.shopSideBar button {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+
+  font-style: italic;
+  text-align: start;
+  background-color: transparent;
+  border: none;
+  padding: 1px 0;
+  width: 100%;
+}
+
+.shopSideBar button:hover,
+.shopSideBar button:focus {
+  color: var(--active-color);
+}

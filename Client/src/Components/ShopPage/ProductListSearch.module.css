@@ -1,0 +1,12 @@
+.input {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
+  font-size: 13px;
+}
+
+.input:focus,
+.input:hover {
+  outline: none;
+  border-color: var(--active-color);
+}

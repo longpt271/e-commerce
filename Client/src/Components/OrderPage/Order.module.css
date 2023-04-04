@@ -1,0 +1,84 @@
+.titleOrder {
+  letter-spacing: 0.1em;
+}
+
+.order {
+  text-align: center;
+  line-height: 1.25;
+}
+
+.order {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.order tr {
+  padding: 0.35em;
+}
+
+.order th {
+  padding: 1em 0.625em;
+}
+
+.order td {
+  padding: 0.625em;
+}
+
+.order th {
+  font-weight: 900;
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 991.98px) {
+  .order {
+    border: 0;
+  }
+
+  .order caption {
+    font-size: 1.3em;
+  }
+
+  .order thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  .order tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+
+  .order td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: left;
+  }
+
+  .order td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    /* float: left; */
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .order td:last-child {
+    text-align: right;
+    border-bottom: 0;
+  }
+}

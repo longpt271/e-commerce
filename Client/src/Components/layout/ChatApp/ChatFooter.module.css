@@ -1,0 +1,45 @@
+.chatFooter {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  height: 63px;
+
+  background-color: #f9fafb;
+  border-top: 1px solid #e2e2e2;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.chatFooter button {
+  border: none;
+  background-color: transparent;
+}
+
+.chatFooter svg {
+  color: #cac7c7;
+}
+
+.iconSend {
+  color: #48b0f7 !important;
+}
+
+.form-control {
+  border-color: transparent;
+}
+
+.form-control:focus {
+  border-color: transparent;
+  box-shadow: inset 0px 0px 0px 1px transparent;
+}
+
+.form-control:focus,
+.btn:focus {
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .chatFooter {
+    padding-right: 15px !important;
+  }
+}

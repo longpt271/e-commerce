@@ -1,0 +1,29 @@
+.totalResult {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  text-align: center;
+  vertical-align: middle;
+}
+
+.totalResult button {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  padding: 0.71rem 15px;
+  font-size: 10px;
+}
+
+/* CSS zoom in sp */
+.zoom-in {
+  animation: zoom-in 300ms ease-out;
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,10 @@
+.banner {
+  min-height: 30rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner h2 {
+  font-weight: 900;
+  line-height: 1.2;
+}

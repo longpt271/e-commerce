@@ -1,0 +1,9 @@
+.CheckoutOrder {
+  height: fit-content;
+  font-size: 0.9rem;
+}
+
+.orderItem {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #ccc;
+}

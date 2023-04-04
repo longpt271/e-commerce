@@ -1,0 +1,120 @@
+/* Cách dùng CSS để ẩn hiện popup */
+
+/* tạo 1 check box và ẩn nó đi */
+#check {
+  display: none !important;
+}
+
+/* luôn ẩn icon close nút popup */
+.chat-btn .close {
+  display: none;
+}
+
+/* Hiệu ứng chuyển giữa close icon và comment icon */
+.chat-btn i,
+.chat-btn svg {
+  transition: all 0.9s ease;
+}
+
+#check:checked ~ .chat-btn .close {
+  display: block;
+  pointer-events: auto;
+  transform: rotate(180deg);
+}
+
+#check:checked ~ .chat-btn .comment {
+  display: none;
+}
+
+.chat-btn .comment {
+  font-size: 33px;
+  color: #fff !important;
+}
+
+/* Vị trí của nút popup */
+.chat-btn {
+  position: fixed;
+  right: 14px;
+  bottom: 30px;
+  cursor: pointer;
+}
+
+/* Css nút popup */
+.chat-btn {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50px;
+  background-color: var(--bg-main-color);
+  color: #fff;
+  font-size: 22px;
+  border: none;
+}
+
+/* Vị trí của popup */
+
+.chat-app-wrapper {
+  position: fixed;
+  right: 5rem;
+  bottom: 6rem;
+  z-index: 1000;
+
+  width: 500px;
+  transition: all 0.4s;
+
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.chat-app-wrapper {
+  display: none;
+  opacity: 0;
+}
+
+#check:checked ~ .chat-app-wrapper {
+  display: block;
+  opacity: 1;
+  animation: fadeInBottom 800ms;
+}
+
+/* fadeIn right and shake animation */
+@keyframes fadeInBottom {
+  0% {
+    /* opacity: 0; */
+    transform: translate(50%, 50%) scale(0) rotate(10deg);
+  }
+  50% {
+    transform: translate(0) scale(1) rotate(-5deg);
+  }
+  100% {
+    /* opacity: 1; */
+    transform: translate(0) scale(1) rotate(0deg);
+  }
+}
+
+/* css avatarImg */
+.avatarImg {
+  width: 35px;
+  height: 100%;
+
+  background-color: #f5f6f7;
+  border-radius: 25px;
+}
+
+@media (max-width: 768px) {
+  .chat-app-wrapper {
+    width: 60%;
+    right: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .chat-app-wrapper {
+    width: 90%;
+    right: 1.5rem;
+  }
+}

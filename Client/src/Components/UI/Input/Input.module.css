@@ -1,0 +1,18 @@
+.input {
+  font: inherit;
+
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+.input:focus {
+  outline: none;
+  /* border-color: var(--active-color); */
+  background: #f6dbfc;
+}
+
+/* .input.invalid {
+  border-color: red;
+  background: #fbdada;
+} */

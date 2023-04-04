@@ -1,0 +1,18 @@
+.btnDesDetail {
+  border: 1px solid transparent;
+  color: #111111;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  transition: all 0.3s;
+  font-weight: 700;
+  padding: 0.7rem 1.5rem;
+
+  background-color: rgb(56, 56, 56);
+  color: white;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.btnDesDetail:hover {
+  scale: calc(0.98);
+}

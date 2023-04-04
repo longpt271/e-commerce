@@ -1,0 +1,65 @@
+.form {
+  width: 100%;
+  text-align: start;
+}
+
+.control {
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.control input {
+  font: inherit;
+  text-align: left;
+  color: #38015c;
+  width: 100%;
+  font-style: normal;
+
+  padding: 0.8rem 1rem;
+  margin: 0.5rem 0 1rem;
+  border: 1px solid #ccc;
+}
+
+.control input::placeholder {
+  color: rgb(183, 183, 183);
+}
+
+.control input:hover,
+.control input:focus {
+  outline: none;
+}
+
+.actions {
+  margin-top: 1rem;
+}
+
+/* CSS button */
+.actions button {
+  font: inherit;
+  font-weight: 300;
+  font-style: normal;
+
+  background-color: var(--bg-main-color);
+  color: var(--white);
+
+  width: fit-content;
+  border: 1px solid var(--bg-main-color);
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.actions button:hover,
+.actions button:active {
+  opacity: 0.8;
+}
+
+.actions button:focus {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .actions button {
+    width: 100%;
+  }
+}

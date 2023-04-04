@@ -1,0 +1,116 @@
+.auth {
+  width: 100%;
+  min-height: 95vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-image: url(../../img/banner1.jpg);
+}
+
+.form {
+  padding: 65px 55px 50px 55px;
+
+  width: 500px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 20px 0px rgb(0 0 0 / 10%);
+  -moz-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 3px 20px 0px rgb(0 0 0 / 10%);
+  -o-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.form h3 {
+  display: block;
+  font-size: 30px;
+  color: #555555;
+  line-height: 1.2;
+  text-align: center;
+  padding-bottom: 33px;
+  margin-bottom: 0;
+}
+
+.control {
+  margin-bottom: 0.5rem;
+}
+
+.control input {
+  height: 68px;
+  border: 1px solid #e6e6e6;
+  border-bottom: none;
+  font-style: normal;
+}
+
+.control input:last-child {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.actions {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* CSS button */
+.actions button {
+  font: inherit;
+  font-weight: 300;
+  font-style: normal;
+
+  background-color: var(--bg-main-color);
+  color: var(--white);
+
+  width: 100%;
+  border: 1px solid var(--bg-main-color);
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+}
+
+.actions button:hover,
+.actions button:active {
+  opacity: 0.8;
+}
+
+.actions button:focus {
+  outline: none;
+}
+
+.toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin: 2rem 0 1rem;
+  background-color: transparent;
+  color: #ccc;
+  border: none;
+  padding: 0.15rem 1.5rem;
+}
+
+.toggle button {
+  padding: 0.5rem;
+  background-color: transparent;
+  border: none;
+  color: dodgerblue;
+  font-style: italic;
+}
+
+.toggle button:hover {
+  background-color: transparent;
+  color: var(--active-color);
+}
+
+@media (max-width: 992px) {
+  .form {
+    position: relative;
+  }
+}

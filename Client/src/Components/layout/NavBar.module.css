@@ -1,0 +1,41 @@
+nav button {
+  background-color: transparent;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.9);
+
+  border: none;
+}
+
+.NavMain a {
+  text-decoration: none;
+}
+
+.NavMain button:hover,
+.NavMain button:active,
+.NavMain button.active {
+  color: var(--active-color);
+}
+
+.navIcon {
+  font-size: 0.9rem;
+  color: #aaa;
+  width: 16px;
+
+  margin-right: 0.5rem;
+}
+
+.abs {
+  margin-right: 0;
+  letter-spacing: 0.1em;
+}
+
+@media (min-width: 991.98px) {
+  /* css vị trí Logo */
+  .abs {
+    position: absolute;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+}

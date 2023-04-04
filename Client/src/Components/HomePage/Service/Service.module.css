@@ -1,0 +1,9 @@
+.service h6 {
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 992px) {
+  .service div {
+    text-align: center;
+  }
+}

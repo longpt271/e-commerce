@@ -1,0 +1,50 @@
+.contact h4 {
+  font-weight: 400;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+}
+
+/* CSS input */
+.form input {
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+.form input:focus {
+  outline: none;
+  border-color: var(--active-color);
+  /* background: #f6dbfc; */
+}
+
+/* CSS button */
+.form button {
+  font: inherit;
+  font-size: 1.15rem;
+  font-weight: 300;
+
+  background-color: var(--bg-main-color);
+  color: var(--white);
+
+  /* border-radius: 30px; */
+  border: 1px solid var(--bg-main-color);
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+}
+
+.form button:hover,
+.form button:active {
+  opacity: 0.8;
+}
+
+.form button:focus {
+  outline: none;
+}
+
+/* CSS input & button */
+.form input,
+.form button {
+  height: 58px;
+}

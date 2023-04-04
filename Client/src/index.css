@@ -1,0 +1,88 @@
+:root {
+  --bg-main-color: #111;
+  --active-color: rgb(220, 177, 74);
+  --red: #f00;
+  --green: #008009;
+  --black: #000;
+  --white: #fff;
+  --gray: #ccc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: italic;
+
+  background: var(--white);
+  color: var(--black);
+}
+
+/* CSS scroll bar */
+body::-webkit-scrollbar {
+  width: 0px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--gray);
+  border-radius: 50px;
+}
+
+/* CSS scroll bar - modal react-bootstrap */
+.modal::-webkit-scrollbar {
+  width: 5px;
+}
+
+.modal::-webkit-scrollbar-thumb {
+  background-color: var(--gray);
+  border-radius: 50px;
+}
+
+/* CSS khi hover */
+.main-animation {
+  cursor: pointer;
+  transition: all 500ms;
+}
+
+.main-animation:hover,
+.main-animation:active,
+.main-animation.active {
+  opacity: 0.6;
+}
+
+.active-animation {
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.active-animation:hover,
+.active-animation:active,
+.active-animation.active {
+  color: var(--active-color);
+}
+
+/* CSS chặn copy text */
+.no-copy-text {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+/* CSS center */
+.centered {
+  margin: 3rem auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
