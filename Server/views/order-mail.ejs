@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ecommerce</title>
+
+    <style>
+      th,
+      td {
+        border: 1px solid gray;
+      }
+      td {
+        text-align: center;
+        padding: 0 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Xin Chào <%= user.fullName %></h2>
+    <h4>Phone: <%= user.phone %></h4>
+    <h4>Address: <%= user.address %></h4>
+    <h4>Time order: <%= formattedDate %></h4>
+
+    <table cellspacing="1px">
+      <tr>
+        <th>Hình Ảnh</th>
+        <th>Tên Sản Phẩm</th>
+        <th>Giá</th>
+        <th>Số Lượng</th>
+        <th>Thành Tiền</th>
+      </tr>
+      <% products.forEach(function(p) { %>
+      <tr>
+        <td>
+          <% if (p.product.img1.startsWith('public/images')) { %>
+          <img
+            src="<%= mainApi %>/<%= p.product.img1 %>"
+            alt="<%= p.product.name %>"
+            height="100"
+          />
+          <% } else { %>
+          <img
+            src="<%= p.product.img1 %>"
+            alt="<%= p.product.name %>"
+            height="100"
+          />
+          <% } %>
+        </td>
+        <td><%= p.product.name %></td>
+        <td><%= p.product.price.toLocaleString('vi-VN') %> VND</td>
+        <td><%= p.quantity %></td>
+        <td>
+          <%= (p.product.price * p.quantity).toLocaleString('vi-VN') %> VND
+        </td>
+      </tr>
+      <% }); %>
+    </table>
+
+    <h2 style="line-height: 1.5">
+      Tổng Thanh Toán: <br /><%= totalMoney.toLocaleString('vi-VN') %> VND
+    </h2>
+    <h2>Cảm ơn bạn đã đặt hàng!</h2>
+  </body>
+</html>
